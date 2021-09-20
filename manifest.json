@@ -4,9 +4,13 @@
     "version": "1",
     "description": "openes any youtube video in embedded window (youtube.com/embed/video_id) *mainly used to prevent distractions*",
     "author": "zeyad_shaban",
-    "permissions": ["activeTab"],
+    "permissions": [
+        "activeTab"
+    ],
     "background": {
-        "scripts": ["index.js"]
+        "scripts": [
+            "background.js"
+        ]
     },
     "browser_action": {},
     "content_scripts": [
@@ -15,7 +19,7 @@
                 "https://www.youtube.com/watch*"
             ],
             "js": [
-                "index.js"
+                "background.js"
             ]
         }
     ]
