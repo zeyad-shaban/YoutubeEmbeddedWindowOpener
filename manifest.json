@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube embed window opener",
+    "version": "1",
+    "description": "openes any youtube video in embedded window (youtube.com/embed/video_id) *mainly used to prevent distractions*",
+    "author": "zeyad_shaban",
+    "permissions": ["activeTab"],
+    "background": {
+        "scripts": ["index.js"]
+    },
+    "browser_action": {},
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/watch*"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
+}
